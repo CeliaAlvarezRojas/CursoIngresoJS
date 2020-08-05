@@ -4,10 +4,25 @@ B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en
 */
 function FahrenheitCentigrados () 
 {
-	
+    let temperatura;
+    let CentigradosFahrenheit;
+
+    temperatura = parseFloat (document.getElementById("txtIdTemperatura").value);
+
+    CentigradosFahrenheit = (temperatura - 32) * 5/9 ;
+
+    alert(CentigradosFahrenheit);
 }
 
 function CentigradosFahrenheit () 
 {
-	
+    let temperatura;
+    let Centigrados;
+
+    temperatura = parseFloat (document.getElementById("txtIdTemperatura").value);
+
+    Centigrados = (temperatura * 5/9) + 32;
+
+    alert(Centigrados);
+
 }
